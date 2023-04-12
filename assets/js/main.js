@@ -54,9 +54,6 @@ const team = [
     },
 ];
 
-
-// console.log(nameTeam)
-
 // Creazione ciclo for per eseguire più commandi selezionando ogni chiave di ogni oggetto
 for ( let i = 0; i < team.length; i++ ) {
     
@@ -75,12 +72,11 @@ for ( let i = 0; i < team.length; i++ ) {
     console.log(roleTeam)
     console.log(imageTeam)
 
-
     document.querySelector("#team").innerHTML += 
     `
-        <div class="col-4">
+        <div class="col-4 p-3">
 
-            <div class="card" >
+            <div class="card border border-0" id="${i}">
                 <img src="./assets/img/${imageTeam}" class="card-img-top" alt="foto frontale di ${nameTeam}">
                 <div class="card-body">
                     <h3 class="card-title">${nameTeam}</h3>
@@ -90,5 +86,5 @@ for ( let i = 0; i < team.length; i++ ) {
         </div>
     `
 
-
+    document.getElementById(i).style.fontFamily = `'Times New Roman', Times, serif`;
 }
