@@ -81,9 +81,10 @@ for ( let i = 0; i < team.length; i++ ) {
         <div class="col-4">
 
             <div class="card" >
-                <img src="..." class="card-img-top" alt="...">
+                <img src="./assets/img/${imageTeam}" class="card-img-top" alt="foto frontale di ${nameTeam}">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h3 class="card-title">${nameTeam}</h3>
+                    <h5 class="card-title">${roleTeam}</h5>
                 </div>
             </div>
         </div>
