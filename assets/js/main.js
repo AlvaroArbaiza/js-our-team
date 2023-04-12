@@ -18,6 +18,9 @@ E ricordiamoci che console.log() è nostro amico!
 Buon lavoro!
 */
 
+/* ---------------------------------------------------------------------------- */
+
+// Array di oggetti
 const team = [
     {
       name: 'Wayne Barnett',
@@ -49,4 +52,42 @@ const team = [
       role: 'Graphic Designer',
       image: 'barbara-ramos-graphic-designer.jpg',
     },
-  ];
+];
+
+
+// console.log(nameTeam)
+
+// Creazione ciclo for per eseguire più commandi selezionando ogni chiave di ogni oggetto
+for ( let i = 0; i < team.length; i++ ) {
+    
+    console.log(team[i]);
+    
+    // Chiave name
+    let nameTeam = team[i].name
+
+    // Chiave role
+    let roleTeam = team[i].role
+
+    // Chiave image
+    let imageTeam = team[i].image
+
+    console.log(nameTeam)
+    console.log(roleTeam)
+    console.log(imageTeam)
+
+
+    document.querySelector("#team").innerHTML += 
+    `
+        <div class="col-4">
+
+            <div class="card" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    `
+
+
+}
